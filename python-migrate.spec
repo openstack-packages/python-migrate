@@ -5,8 +5,8 @@
 %global srcname sqlalchemy-migrate
 
 Name: python-migrate
-Version: 0.9.2
-Release: 1%{?dist}
+Version: XXX
+Release: XXX{?dist}
 Summary: Schema migration tools for SQLAlchemy
 
 Group: Development/Languages
@@ -61,7 +61,7 @@ databases in sync as schema changes are required.  It allows you to manage
 database change sets and database repository versioning.
 
 %prep
-%setup -q -n %{srcname}-%{version}
+%setup -q -n %{srcname}-%{upstream_version}
 %patch0 -p1 -b .db2
 %patch1 -p1 -b .py27
 %patch100 -p1 -b .rename
